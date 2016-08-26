@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.languageflashcards.MainActivity">
+
+    <TextView
+        android:id="@+id/textNewWord"
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textNewWord"
+        style="@style/VocabWords"/>
+
+    <ImageView
+        android:id="@+id/vocabPicture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/textNativeWord"
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textNativeWord"
+        style="@style/VocabWords"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0">
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="backButton"
+            android:padding="8dp"
+            android:text="@string/buttonBack"/>
+        <TextView
+            android:id="@+id/textPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="@string/textPosition"/>
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="nextButton"
+            android:padding="8dp"
+            android:text="@string/buttonNext"/>
+    </LinearLayout>
+</LinearLayout>

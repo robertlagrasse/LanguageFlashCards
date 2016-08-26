@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Language Flash Cards</string>
+    <string name="textNewWord">Foreign Word</string>
+    <string name="textNativeWord">Native Word</string>
+    <string name="buttonBack">Previous</string>
+    <string name="textPosition">-</string>
+    <string name="buttonNext">Next</string>
+</resources>
